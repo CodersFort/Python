@@ -1,0 +1,22 @@
+VALID SUBSEQUENCE
+s: abc
+t: ahbgdc
+
+Is "s" a subsequence of "t"?
+True
+
+
+VALID SUBSEQUENCE
+s: axc
+t: ahbgdc
+
+Is "s" a subsequence of "t"?
+False
+
+
+VALID SUBSEQUENCE
+s: cyxz
+t: kccjesplqkddvhjtvswcdlohrxqfkmtxdejaxwmoasbalpgxbcrdmrnofqrimqxnbrocseuvqcetbjjhobgxusicjfwvkifobeuo..................................................glccsvpinsfdjcbeuukpbbkfgkufmjkgcuabhxqbnirdskqvujkouubgawguwmkpnfpdbddjmwmwrknmbxmgcbldwmxbmugftafv
+
+Is "s" a subsequence of "t"?
+False
