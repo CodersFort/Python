@@ -5,15 +5,35 @@ Created on Sun Oct 25 18:29:39 2020
 
 @author: andrew
 """
-
-'import Validate BST from Trees folder (had to add a "_" to call it)\
-    I use Linux, this method works for me; your path call line 13 may be different'
-import sys
-# insert at 1, 0 is the script path (or '' in REPL)
-sys.path.insert(1, '../../Trees/')
-from Validate_BST import *
 import random
 
+'binary search tree'
+class BST:
+
+    def __init__(self, value):
+        self.value = value
+        self.left = None
+        self.right = None
+
+ # Average: O(log(n)) time | O(1) space
+ # Worst: O(n) time | O(1) space
+    def insert(self, value):
+        currentNode = self
+        while True:
+            if value < currentNode.value:
+                if currentNode.left is None:
+                    currentNode.left = BST(value)
+                    break
+                else:
+                    currentNode = currentNode.left
+            else:
+                if currentNode.right is None:
+                    currentNode.right = BST(value)
+                    break
+                else:
+                    currentNode = currentNode.right
+        return self
+    
 
 
 'NodeinBST adapted from: https://www.geeksforgeeks.org/search-a-node-in-binary-tree/'
